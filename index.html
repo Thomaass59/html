@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!--
+ Copyright 2023 Thomas 16h30 - Minuit c'te site !
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <title>Portfolio</title>
+</head>
+
+<a id="Accueil"></a>
+<a id="Presentation"></a>
+<a id="Competence"></a>
+<a id="Realisation"></a>
+<a id="Contact"></a>
+
+<body>
+  <footer class="Footer">
+    <a href="https://www.linkedin.com/in/thomas-vieira-141b51267/" target="_blank"><i
+        class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <a href="mailto:thomas59.gameur@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open-text fa-2xl"></i></a>
+  </footer>
+
+  <nav class="NavigationLayer" id="Navigation">
+
+
+    <div class="TitreNav">Thomas.<div id="barre">|</div>
+    </div>
+    <li class="li"><a href="#Accueil" id="callOne">Accueil</a></li>
+    <li class="li"><a href="#Presentation" id="callTwo">Présentation</a></li>
+    <li class="li"><a href="#Competence" id="callThree">Compétance</a></li>
+    <li class="li"><a href="#Realisation" id="callFour">Réalisation</a></li>
+    <li class="li"><a href="#Contact" id="callFive">Contact</a></li>
+  </nav>
+
+  <main class="WrapperContainer" id="siteContainer">
+
+    <!------------- Accueil -------------------->
+
+    <section class="Accueil BaseLayers" id="PageOne">
+
+      <div id="header">
+        <h1>Développeur WEB Full Stack</h1>
+        <h1>WEB Mobile Full Stack</h1>
+      </div>
+    </section>
+
+    <!------------- Présentation -------------------->
+
+    <section class="Presentation BaseLayers" id="PageTwo">
+
+      <div id="header">
+        <h1>Présentation</h1>
+      </div>
+    </section>
+
+    <!------------- Compétance -------------------->
+
+    <section class="Competence BaseLayers" id="PageThree">
+      <div id="header">
+        <h1>Compétance</h1>
+      </div>
+    </section>
+
+    <!------------- Réalisation -------------------->
+
+    <section class="Realisation BaseLayers" id="PageFour">
+      <div id="header">
+        <h1>Réalisation</h1>
+      </div>
+    </section>
+
+    <!------------- Contact -------------------->
+
+    <section class="Contact BaseLayers" id="PageFive">
+      <div id="container">
+        <h1>Contactez-Nous</h1>
+        <form id="contact" method="post" action="#">
+          <label for="fname">Prénom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre Prénom">
+
+          <label for="objet">Objet</label>
+          <input type="text" id="objet" name="objet" placeholder="L'objet de votre mail">
+
+          <label for="emailAddress">Email</label>
+          <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+          <label for="subject">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+
+          <input type="submit" value="Envoyer" value="Envoyer le formulaire !">
+        </form>
+      </div>
+    </section>
+</body>
+
+</html>

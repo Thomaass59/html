@@ -1,0 +1,222 @@
+/* *\********* Import *********\* */
+
+@import url('font.css');
+@import url('animation.css');
+@import url('responsive.css');
+
+/* *\********* CSS *********\* */
+
+body {
+    background-image: url("../img/slider.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.WrapperContainer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Accueil {
+    background-image: url("../img/slider.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
+}
+
+.Presentation {
+    background-image: url("../img/presentation.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 100%;
+    transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
+}
+
+.Competence {
+    background-image: url("../img/competance.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 100%;
+    transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
+}
+
+.Realisation {
+    background-image: url("../img/realisation.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 100%;
+    transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
+}
+
+.Contact {
+    background-image: url("../img/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 100%;
+    transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
+}
+
+.NavigationLayer {
+    height: 5%;
+    background-color: rgb(147, 138, 167, 0.5);
+    width: 99%;
+    height: 98px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(147, 138, 167, 0.5);
+    width: 100%;
+    height: 98px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.TitreNav {
+    display: flex;
+    overflow: auto;
+    font-family: 'russo_oneregular';
+    font-weight: 300;
+    font-size: 48px;
+    padding-top: 15px;
+}
+
+#barre {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    animation: barre .8s infinite;
+}
+
+li {
+    list-style: none;
+    font-family: 'interregular';
+    font-weight: 300;
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+li:hover {
+    color: blue;
+    border-bottom: solid 5px;
+}
+
+a[id="Accueil"],
+a[id="Presentation"],
+a[id="Competence"],
+a[id="Realisation"],
+a[id="Contact"] {
+    display: none;
+}
+
+.BaseLayers {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 2.5%;
+}
+
+a[id="Accueil"]:target~main>section#PageOne,
+a[id="Presentation"]:target~main>section#PageTwo,
+a[id="Competence"]:target~main>section#PageThree,
+a[id="Realisation"]:target~main>section#PageFour,
+a[id="Contact"]:target~main>section#PageFive {
+    left: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: teal;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#trans {
+    transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+}
+
+#page {
+    color: blue;
+    border-bottom: solid 5px;
+}
+
+.li {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header {
+    text-align: center;
+    color: black;
+    font-family: 'josefin_sansthin';
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 10%;
+    height: 100vh;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    height: 15px;
+    color: #fff;
+}
+
+.Footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+
+input[type=text],
+textarea,
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+
+label {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: #4c8e37;
+    color: #555;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #69af54;
+}

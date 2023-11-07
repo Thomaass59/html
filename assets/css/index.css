@@ -2,14 +2,18 @@
 
 @import url('font.css');
 @import url('animation.css');
-@import url('responsive.css');
+/* @import url("responsive.css"); */
 
 /* *\********* CSS *********\* */
+* {
+    margin: 0%;
+    padding: 0%;
+}
 
 body {
-    background-image: url("../img/slider.jpg");
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+    background-size: 240% 240%;
+    animation: animBack 28s ease infinite;
     padding: 0%;
     height: 100%;
     width: 100%;
@@ -23,64 +27,66 @@ body {
 }
 
 .Accueil {
-    background-image: url("../img/slider.jpg");
-    background-position: center;
-    background-size: cover;
-    color: #FFF;
+    background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+    background-size: 240% 240%;
+    animation: animBack 28s ease infinite;
+    left: 100%;
     transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
 }
 
 .Presentation {
-    background-image: url("../img/presentation.jpg");
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+    background-size: 240% 240%;
+    animation: animBack 28s ease infinite;
     left: 100%;
     transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
 }
 
 .Competence {
-    background-image: url("../img/competance.jpg");
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+    background-size: 240% 240%;
+    animation: animBack 28s ease infinite;
     left: 100%;
     transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
 }
 
 .Realisation {
-    background-image: url("../img/realisation.jpg");
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+    background-size: 240% 240%;
+    animation: animBack 28s ease infinite;
     left: 100%;
     transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
 }
 
 .Contact {
-    background-image: url("../img/contact.jpg");
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+    background-size: 240% 240%;
+    animation: animBack 28s ease infinite;
     left: 100%;
     transition: left 0.5s cubic-bezier(.25, 0.1, .25, 1);
 }
 
 .NavigationLayer {
     height: 5%;
-    background-color: rgb(147, 138, 167, 0.5);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #000000;
+    border-color: white;
     width: 99%;
     height: 98px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 nav {
     position: fixed;
-    z-index: 4;
+    z-index: 2;
     width: 100%;
+    margin-left: 15px;
+    border: 1px solid white;
     border-radius: 15px;
-    background-color: rgb(147, 138, 167, 0.5);
-    width: 100%;
+    background-color: white;
     height: 98px;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .TitreNav {
@@ -107,7 +113,7 @@ li {
 }
 
 li:hover {
-    color: blue;
+    color: white;
     border-bottom: solid 5px;
 }
 
@@ -165,23 +171,20 @@ a:visited {
 
 #header {
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'josefin_sansthin';
     font-weight: 300;
     font-size: 30px;
     padding-top: 10%;
-    height: 100vh;
+    height: 50%;
     width: 100%;
 }
 
-footer {
+.Footer {
     display: flex;
     justify-content: right;
     height: 15px;
     color: #fff;
-}
-
-.Footer {
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 5%;
@@ -209,14 +212,343 @@ label {
 }
 
 input[type=submit] {
-    background-color: #4c8e37;
-    color: #555;
+    background-color: white;
+    color: #000000;
     padding: 12px 20px;
-    border: none;
     border-radius: 20px;
+    border: 10px;
+    border-color: #000000;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #69af54;
+    background-color: white;
+    border: 5px;
+    border-color: #000000;
+}
+
+.container {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+
+.profil {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    height: 30%;
+}
+
+#photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background-image: url("../img/photo.png");
+    background-position: center;
+    background-size: cover;
+    margin-top: 13%;
+    margin-left: 30%;
+}
+
+#text {
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 200%;
+    white-space: normal;
+    color: white;
+}
+
+#text2 {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 200%;
+    white-space: normal;
+    color: white;
+}
+
+#header2 {
+    text-align: center;
+    color: white;
+    font-family: 'interregular';
+    font-weight: 30px;
+    font-size: 30px;
+    padding-top: 5%;
+    height: 10%;
+}
+
+.site1 {
+    margin-left: 650px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+}
+
+#real1 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: none;
+}
+
+#real3 {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 200%;
+    color: white;
+    font-family: 'josefin_sansthin' impact;
+    text-align: center;
+
+}
+
+.site2 {
+    margin-left: 200px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#real2 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: none;
+}
+
+#real4 {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 200%;
+    color: white;
+    font-family: 'josefin_sansthin' impact;
+    text-align: center;
+}
+
+/* *\********* Responsive  ********\**/
+/* *\*********  Téléphone  ********\**/
+
+@media screen and (max-width: 1080px) and (max-height: 2400px) {
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    html,
+    body {
+        background: linear-gradient(305deg, #715a1b, #fca862, #bedde5, #5d35a9);
+        background-size: 240% 240%;
+        animation: animBack 28s ease infinite;
+        width: 1080px;
+        height: 2400px;
+        overflow: hidden;
+    }
+
+    .Footer {
+        display: flex;
+        justify-content: left;
+        height: 15px;
+        color: #fff;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 3%;
+        /* display: none; */
+    }
+
+    .NavigationLayer {
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #000000;
+        border-color: white;
+        display: flex;
+        justify-content: space-around;
+        /* display: none; */
+    }
+
+    nav {
+        background-image: url('../img/bg1.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: fixed;
+        z-index: 2;
+        margin-left: 5px;
+        border: 1px solid white;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        /* display: none; */
+    }
+
+    .profil {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50%;
+        height: 50%;
+        width: 100%;
+        /* display: none; */
+    }
+
+    #photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 600px;
+        background-image: url("../img/photo.png");
+        background-position: center;
+        background-size: cover;
+        margin-top: 1%;
+        margin-left: 37%;
+        /* display: none;  */
+    }
+
+    #text {
+        text-align: center;
+        color: white;
+        font-family: 'josefin_sansthin';
+        font-weight: 300;
+        font-size: 50px;
+        height: 50%;
+        width: 100%;
+        /* display: none; */
+    }
+
+    .site2 {
+        margin-left: 1px;
+        margin-top: 40px;
+        display: flex;
+    }
+
+    .site1 {
+        margin-left: 350px;
+        margin-top: 20px;
+        padding-bottom: 500px;
+        display: flex;
+    }
+
+    #text2 {
+        text-align: center;
+        margin-top: 20%;
+        margin-left: 5%;
+        font-size: 300%;
+        white-space: 10px;
+        color: white;
+        /* display: none; */
+    }
+
+    #header2 {
+        text-align: center;
+        color: white;
+        font-family: 'josefin_sansthin';
+        font-weight: 600;
+        font-size: 50px;
+        padding-top: 15%;
+        /* display: none; */
+    }
+
+    #real1 {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 10%;
+        margin-left: 15px;
+        background-color: none;
+        /* display: none; */
+    }
+
+    #real2 {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 10%;
+        margin-right: 235px;
+        background-color: none;
+        /* display: none; */
+    }
+
+    #real3 {
+        margin-top: 1%;
+        margin-left: 1%;
+        font-size: 50px;
+        color: white;
+        font-family: 'josefin_sansthin' impact;
+        /* display: none; */
+    }
+
+    #real4 {
+        margin-top: 1%;
+        margin-left: 1%;
+        font-size: 50px;
+        color: white;
+        font-family: 'josefin_sansthin' impact;
+        /* display: none; */
+    }
+
+    .container {
+        max-width: 350px;
+        min-height: 500px;
+        margin: 150px auto;
+        padding: 40px 30px 30px 30px;
+        background-color: #ffffff;
+        border-radius: 20px;
+    }
+
+    .li {
+        display: none;
+    }
+
+    .TitreNav {
+        display: flex;
+        font-family: 'russo_oneregular';
+        font-weight: 300;
+        font-size: 50px;
+        padding-top: 10px;
+        /* display: none; */
+    }
+
+    #header {
+        text-align: center;
+        color: white;
+        font-family: 'josefin_sansthin';
+        font-weight: 300;
+        font-size: 30px;
+        padding-top: 100%;
+        height: 50%;
+        width: 100%;
+        /* display: none; */
+    }
+
+    .Accueil {
+        width: 1080px;
+        height: 2400px;
+        /* display: none; */
+    }
+
+    .Presentation {
+        /* width: 1080px; */
+        /* height: 2400px; */
+        display: none;
+    }
+
+    .Competence {
+        /* width: 1080px; */
+        /* height: 2400px; */
+        display: none;
+    }
+
+    .Realisation {
+        /* width: 1080px; */
+        /* height: 2400px; */
+        display: none;
+    }
+
+    .Contact {
+        /* width: 1080px;
+        height: 2400px; */
+        display: none;
+    }
 }
